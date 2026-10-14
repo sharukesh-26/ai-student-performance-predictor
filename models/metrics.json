@@ -1,0 +1,31 @@
+{
+  "model_type": "Linear Regression",
+  "target": "exam_score",
+  "numeric_features": [
+    "hours_studied",
+    "attendance_percent",
+    "previous_score",
+    "sleep_hours",
+    "assignments_completed"
+  ],
+  "categorical_features": [
+    "extra_curricular",
+    "parental_support"
+  ],
+  "n_rows": 200,
+  "n_train": 160,
+  "n_test": 40,
+  "test_size": 0.2,
+  "random_state": 42,
+  "train": {
+    "mae": 5.658048355871062,
+    "rmse": 7.404210758516894,
+    "r2": 0.6768672901207649
+  },
+  "test": {
+    "mae": 7.398313219323038,
+    "rmse": 9.224837451702854,
+    "r2": 0.45193165821968706
+  },
+  "note": "Test metrics are the honest score. They use students the model did not train on. Train metrics are usually a bit better."
+}
